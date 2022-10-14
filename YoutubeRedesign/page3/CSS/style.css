@@ -1,0 +1,30 @@
+ /* page 3*/
+
+#background{
+    width: 100%;
+height: 100%;
+
+
+}
+
+.logo{
+    width: 30px;
+    position: absolute;
+    left: 83%;
+    top: 3%;
+
+}
+
+.popup{
+    position: absolute;
+    width: 45%;
+    left: 30%;
+    top: 20%;
+
+}
+
+.clickable{
+    position: absolute;
+      width: 9%;
+    top: 20%;
+    left: 48%;
