@@ -11,7 +11,7 @@
 
 .card1
 {
-	background-color: darkgreen;
+	background-color: black;
 	width: 700px;
 	height: 800px;
 	position: absolute;
@@ -133,7 +133,7 @@
 /*number generator style*/
 
 #generator {
-	background-color: #3F943F;
+	background-color: black;
 	border: none;
 	border-radius: 8px;
 	padding: 32px 25px;
@@ -142,12 +142,13 @@
 	color: white;
 	opacity: 0.9;
 	transition: 0.3s;
-	cursor: pointer;
 	margin-left: 60%;
 	
 }
 
 #generator:hover {opacity: 1;}
+
+#generator:hover {background-color: lightgrey;}
 
 
 /*#clear {
