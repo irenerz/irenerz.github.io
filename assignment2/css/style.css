@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+    
+
+}
+
+figure:hover .menuIcon {
+    opacity: 0; 
+}
+
+.menuIcon {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+figcaption {
+    position: relative;
+    top: -25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    font-family: Helvetica;
+    font-size: 15px;
+}
+
+.gridContainer {
+    display: grid;
+    background-color: purple;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(5,20%);
+    height: 100vh;  
+}
+
+.gridContainer div {
+    background-color: lavender;
+    text-align: center;
+    font-size: 30px;
+}
+
+figure img {
+    width: 8%;
+}
+
+/* .item12, .item13, .item14 {
+    opacity: 0;
+    transition: 0.3s;
+} */
+
+.item17 {
+    grid-column: span 3; 
+}
+
+.item17 p {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 50px ;
+}
+
+.item1, .item2, .item3, .item4, .item5{
+    height: 50%;
+}
