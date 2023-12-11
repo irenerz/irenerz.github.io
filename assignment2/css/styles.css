@@ -1,0 +1,201 @@
+/* General Styling */
+*{
+    font-family: Helvetica;
+}
+
+
+/* Background image */
+body{
+    /* background-image: url(../images/sakura.png);
+    background-position-y: 10%;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+
+/* navigation bar styling*/
+.navBar{
+    font-size: 20px;
+
+}
+
+/* Unvisited link*/
+.navBar a:link{
+    text-decoration: none;
+    color: black;
+}
+
+/* visited link */
+.navBar a:visited{
+    color: black;
+}
+
+/* on hover */
+.navBar a:hover{
+    color: rgb(218, 121, 142);
+}
+
+/* Irene aka homepage */
+
+.navItem1{
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px; 
+}
+
+
+/* contact */
+.navItem2{
+    float: right;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+/* homepage grid layout */
+.homepageContent{
+    padding: 50px;
+    display: grid;
+    background-color: rgba(128, 0, 128, 0);
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5,20%);
+    text-align: center;
+    height: 100vh; 
+    
+}
+
+/* portfolio, about, resume section */
+figcaption {
+    position: relative;
+    top: -25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    font-family: Helvetica;
+    font-size: 25px;
+}
+
+/* unvisited */
+figure a:link {
+    text-decoration: none;
+    color: black;
+}
+
+/* visited */
+figure a:visited{
+    color: black;
+}
+
+/* on hover */
+figure:hover figcaption {
+    opacity: 1;
+}
+
+figure:hover .menuIcon {
+    opacity: 0; 
+}
+
+.menuIcon {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+figure img {
+    width: 15%;
+}
+
+
+/* my name */
+.item12 {
+    grid-column: span 4; 
+}
+
+.item12 p {
+    
+    font-weight: bold;
+    font-size: 70px ;
+}
+
+
+
+
+/* about page grid layout */
+.aboutPageContent{
+    display: grid;
+    background-color: rgba(128, 0, 128, 0);
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(4,20%);
+    text-align: left;
+    height: 100vh;  
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+/* name */
+.about9{
+    grid-column: span 4;
+
+}
+
+.about9 p{
+    font-weight: bold;
+    font-size: 70px ;  
+    
+}
+
+
+/* pic of me */
+.about10{
+    grid-column: span 4;
+    grid-row: span 3;
+}
+
+.me{
+    width: 500px;
+    float: right;
+}
+
+/* text about me */
+.about11{
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+
+
+/* work page grid layout */
+.workPageContent{
+    display: grid;
+    background-color: rgba(128, 0, 128, 0);
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(5,20%);
+    text-align: left;
+    height: 100vh;  
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+/* shoppers */
+.work8{
+    grid-row: span 3;
+}
+
+.shoppers{
+    width: 200px;
+}
+
+
+
+
+/* the camera */
+.work9{
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 500px;
+    height: 281px;
+
+}
