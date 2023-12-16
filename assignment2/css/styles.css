@@ -1,6 +1,7 @@
 /* General Styling */
 *{
     font-family: Helvetica;
+    box-sizing: border-box;
 }
 
 
@@ -20,7 +21,7 @@ body{
 /* navigation bar styling*/
 .navBar{
     font-size: 20px;
-
+    height: 50px;
 }
 
 /* Unvisited link*/
@@ -143,7 +144,8 @@ figure img {
 
 .about9 p{
     font-weight: bold;
-    font-size: 70px ;  
+    font-size: 70px ; 
+    /* margin-top: -30px;  */
     
 }
 
@@ -171,31 +173,103 @@ figure img {
 .workPageContent{
     display: grid;
     background-color: rgba(128, 0, 128, 0);
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: repeat(5,20%);
-    text-align: left;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5,200px);
+    text-align: center;
     height: 100vh;  
     column-gap: 20px;
     row-gap: 10px;
 }
 
 /* shoppers */
-.work8{
+.work1{
+    grid-column: span 2;
     grid-row: span 3;
 }
 
-.shoppers{
-    width: 200px;
+.work2{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.work3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.shoppers {
+    width: 400px;
+    border-radius: 15px;
 }
 
 
+.youtube{
+    width: 400px;
+    border-radius: 15px;
+}
+
+.magazine{
+    width: 400px;
+    border-radius: 15px;
+}
 
 
-/* the camera */
-.work9{
-    grid-column: span 2;
-    grid-row: span 2;
-    width: 500px;
-    height: 281px;
+/* card containers */
+.card{
+    width: 400px;
+    border-radius: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+}
+  
+
+.container {
+    border-radius: 25px;
+}
+
+.container a:link h2 {
+    text-align: center;    
+}
+
+@media screen and (max-width:800px) {
+    .navBar .aboutPageContent {
+        width:100%;
+    }
+    .homepageContent{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,1fr) 5fr 5fr 5fr 1fr 5fr repeat(11,1fr);
+
+        
+    }
+    .item12 {
+        grid-column: span 1; 
+    }
+
+    .aboutPageContent{
+        grid-template-columns: 1fr;
+    }
+    
+    /* name */
+    .about9{
+        grid-column: span 1;
+
+    }
+
+    /* pic of me */
+    .about10{
+        grid-column: span 1;
+    }
+
+    /* text about me */
+    .about11{
+        grid-column: span 1;
+    }
 
 }
